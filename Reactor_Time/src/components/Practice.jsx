@@ -30,7 +30,7 @@ const MyComponent = () => {
 };
 
 //Creaing a function though the class
-class component extends React.Component {
+class part_1 extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -42,3 +42,21 @@ class component extends React.Component {
     );
   }
 }
+
+//Creating an component with composition
+const ChildComponent = () => {
+  return (
+    <div>
+      <p>I am the child</p>
+    </div>
+  );
+};
+
+const ParentComponent = () => {
+  return (
+    <div>
+      <h1>I am the parent</h1>
+      <ChildComponent />
+    </div>
+  );
+};
