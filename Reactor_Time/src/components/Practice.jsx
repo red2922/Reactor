@@ -23,7 +23,22 @@ const Comment = (
 
 ReactDOM.render(JSX, document.getElementById("challenge-node"));
 
+//Creating a component with a function
 const MyComponent = () => {
   // Change code below this line
   return <div>Test output</div>;
 };
+
+//Creaing a function though the class
+class component extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <div>
+        <h1>Hello React!</h1>
+      </div>
+    );
+  }
+}
