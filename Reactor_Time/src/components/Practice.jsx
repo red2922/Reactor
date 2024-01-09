@@ -1,3 +1,5 @@
+//All this is out of date. Do not use
+
 const JSX = <h1>Hello JSX!</h1>;
 
 const JSX_2 = (
@@ -99,6 +101,42 @@ class TypesOfFood extends React.Component {
         {/* Change code below this line */}
         <Fruits />
         {/* Change code above this line */}
+      </div>
+    );
+  }
+}
+
+//More of creating nested, stateless components
+//Citrus and NonCitrus do not exist in my code
+class Fruits_1 extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <div>
+        <h2>Fruits:</h2>
+        {/* Change code below this line */}
+        <NonCitrus />
+        <Citrus />
+        {/* Change code above this line */}
+      </div>
+    );
+  }
+}
+
+class TypesOfFood extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <div>
+        <h1>Types of Food:</h1>
+        {/* Change code below this line */}
+        <Fruits_1 />
+        {/* Change code above this line */}
+        <Vegetables />
       </div>
     );
   }
