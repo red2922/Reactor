@@ -1,21 +1,37 @@
-import { MouseEvent } from "react";
-function ListGroup() {
-  let names = ["Rose", "Red", "Lily", "Violet", "Rikki", "Eclipse", "Zero"];
+import { useState } from "react";
+//{items: [], heading: string}
+interface Props {
+  items: string[];
+  heading: string;
+}
 
+function ListGroup({ items, heading }: Props) {
+  const [selectedIndex, setSelectedIndex] = useState(-1);
+  //arr[0]; Variable (selectedIndex)
+  //arr[1]; Updater Function
   //Event handler
-  const handleClick = (event: MouseEvent) => console.log(event);
 
   //Both names.length conditional functiosn do the same thing within the code
   //Works as true and true == true
   //Otherwise it is false and true which is equal to false
   return (
     <>
-      <h1>Character Names</h1>
-      {names.length === 0 ? <p>No Character Found</p> : null}
-      {names.length === 0 && <p>No Character Found</p>}
+      <h1>{heading}</h1>
+      {items.length === 0 ? <p>No Character Found</p> : null}
+      {items.length === 0 && <p>No Character Found</p>}
       <ul className="list-group">
-        {names.map((item) => (
-          <li className="list-group-item" key={item} onClick={handleClick}>
+        {items.map((item, index) => (
+          <li
+            className={
+              selectedIndex === index
+                ? "list-group-item active"
+                : "list-group-item"
+            }
+            key={item}
+            onClick={() => {
+              setSelectedIndex(index);
+            }}
+          >
             {item}
           </li>
         ))}
