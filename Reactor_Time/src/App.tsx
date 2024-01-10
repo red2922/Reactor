@@ -1,6 +1,7 @@
 import ListGroup from "./components/ListGroup";
 import Alert from "./components/Alert";
 import Button from "./components/Button";
+import PracButton from "./components/PracButton";
 import { useState } from "react";
 
 function App() {
@@ -21,6 +22,8 @@ function App() {
         onSelectItem={handleSelectItem}
       />
       <Button onClick={() => setAlertVisibility(true)}>My First Button</Button>
+      <br />
+      <PracButton></PracButton>
     </div>
   );
 }
