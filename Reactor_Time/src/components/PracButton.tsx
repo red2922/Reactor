@@ -5,8 +5,10 @@ const PracButton = () => {
 
   return (
     <>
-      <button onClick={changeNum}>Press me and the number goes up</button>
-      <p>{num}</p>
+      <button onClick={changeNum}>
+        Press me and the number goes up
+        <span className="badge text-bg-secondary">{num}</span>
+      </button>
     </>
   );
 };
