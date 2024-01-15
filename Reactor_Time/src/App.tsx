@@ -3,6 +3,7 @@ import Alert from "./components/Alert";
 import Button from "./components/Button";
 import PracButton from "./components/PracButton";
 import { useState } from "react";
+import HelloWorld from "./components/HelloWorld";
 
 function App() {
   let names = ["Rose", "Red", "Lily", "Violet", "Rikki", "Eclipse", "Zero"];
@@ -13,6 +14,7 @@ function App() {
 
   return (
     <div>
+      <HelloWorld></HelloWorld>
       {alertVisible && (
         <Alert onClose={() => setAlertVisibility(false)}>Hello World</Alert>
       )}
