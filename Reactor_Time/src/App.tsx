@@ -4,6 +4,7 @@ import Button from "./components/Button";
 import PracButton from "./components/PracButton";
 import { useState } from "react";
 import HelloWorld from "./components/HelloWorld";
+import NavBar from "./components/NavBar";
 
 function App() {
   let names = ["Rose", "Red", "Lily", "Violet", "Rikki", "Eclipse", "Zero"];
@@ -14,6 +15,7 @@ function App() {
 
   return (
     <div>
+      <NavBar></NavBar>
       <HelloWorld></HelloWorld>
       {alertVisible && (
         <Alert onClose={() => setAlertVisibility(false)}>Hello World</Alert>
