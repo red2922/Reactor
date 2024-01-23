@@ -1,0 +1,14 @@
+.test {
+  display: flex;
+  flex-basis: content;
+  justify-content: space-evenly;
+}
+
+.test_two {
+  background-color: grey;
+  width: fit-content;
+}
+
+.test_three {
+  margin-left: 20px;
+}

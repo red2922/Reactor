@@ -5,6 +5,7 @@ import PracButton from "./components/PracButton";
 import { useState } from "react";
 import HelloWorld from "./components/HelloWorld";
 import NavBar from "./components/NavBar";
+import "./App.css";
 
 function App() {
   let names = ["Rose", "Red", "Lily", "Violet", "Rikki", "Eclipse", "Zero"];
@@ -16,7 +17,7 @@ function App() {
   return (
     <div>
       <NavBar></NavBar>
-      <HelloWorld></HelloWorld>
+
       {alertVisible && (
         <Alert onClose={() => setAlertVisibility(false)}>Hello World</Alert>
       )}
@@ -25,9 +26,13 @@ function App() {
         heading="Character Names"
         onSelectItem={handleSelectItem}
       />
-      <Button onClick={() => setAlertVisibility(true)}>My First Button</Button>
-      <br />
-      <PracButton></PracButton>
+      <div className="test">
+        <Button onClick={() => setAlertVisibility(true)}>
+          My First Button
+        </Button>
+        <PracButton></PracButton>
+        <HelloWorld></HelloWorld>
+      </div>
     </div>
   );
 }

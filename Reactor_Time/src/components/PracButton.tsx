@@ -5,9 +5,9 @@ const PracButton = () => {
 
   return (
     <>
-      <button onClick={changeNum}>
+      <button onClick={changeNum} className="test_two">
         Press me and the number goes up
-        <span className="badge text-bg-secondary">{num}</span>
+        <span className="badge text-bg-secondary test_three">{num}</span>
       </button>
     </>
   );
