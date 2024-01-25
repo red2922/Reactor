@@ -5,6 +5,7 @@ import PracButton from "./components/PracButton";
 import { useState } from "react";
 import HelloWorld from "./components/HelloWorld";
 import NavBar from "./components/NavBar";
+import ReactiveButton from "./components/Reactor";
 import "./App.css";
 
 function App() {
@@ -32,6 +33,9 @@ function App() {
         </Button>
         <PracButton></PracButton>
         <HelloWorld></HelloWorld>
+        <ReactiveButton>Hello There</ReactiveButton>
+        <ReactiveButton>Testing</ReactiveButton>
+        <ReactiveButton>Hahah this took so long to do</ReactiveButton>
       </div>
     </div>
   );
