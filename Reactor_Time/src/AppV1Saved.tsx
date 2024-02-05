@@ -4,7 +4,7 @@ import Button from "./components/Button";
 import PracButton from "./components/PracButton";
 import { useState } from "react";
 import HelloWorld from "./components/HelloWorld";
-import NavBar from "./components/NavBar";
+import NavBar from "./components/NavBarElements";
 import ReactiveButton from "./components/Reactor";
 import "./App.css";
 
