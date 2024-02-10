@@ -22,3 +22,5 @@ const data = [
     answer: "It is very possible to create accordion with different libraries",
   },
 ];
+
+export default data;
