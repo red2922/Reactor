@@ -2,4 +2,4 @@
 
 ### This React tutorial focuses on Interview questions
 
-In an interview always explain the approach you are looking to use to make the component or page you want to make.
+In an interview always explain the approach you are looking to use to make the component or page you want to make. Makes it so the interviewer knows you understand the problem
