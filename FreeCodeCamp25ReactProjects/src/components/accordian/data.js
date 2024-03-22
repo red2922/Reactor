@@ -9,7 +9,7 @@ const data = [
     id: "2",
     question: "What are they used for?",
     answer:
-      "THey are commonly employed in various contexts, including FAQs, and descriptions",
+      "They are commonly employed in various contexts, including FAQs, and descriptions",
   },
   {
     id: "3",
