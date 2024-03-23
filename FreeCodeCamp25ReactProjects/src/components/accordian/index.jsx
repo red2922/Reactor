@@ -20,7 +20,7 @@ export default function Accordian() {
     const findIndex = copyMulti.indexOf(getCurrentId);
 
     if (findIndex === -1) copyMulti.push(getCurrentId);
-    else copyMulti.splice(getCurrentId, 1);
+    else copyMulti.splice(findIndex, 1);
 
     setMulti(copyMulti);
   };
@@ -46,10 +46,13 @@ export default function Accordian() {
                 <h3>{dataItem.question}</h3>
                 <span>+</span>
               </div>
-              {selected === dataItem.id ||
-              getMulti.indexOf(dataItem.id) !== -1 ? (
-                <div className="content">{dataItem.answer}</div>
-              ) : null}
+              {enableMulti
+                ? getMulti.indexOf(dataItem.id) !== -1 && (
+                    <div className="acc-content ">{dataItem.answer}</div>
+                  )
+                : selected === dataItem.id && (
+                    <div className="acc-content ">{dataItem.answer}</div>
+                  )}
             </div>
           ))
         ) : (
