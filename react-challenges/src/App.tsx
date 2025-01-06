@@ -3,6 +3,7 @@ import Timer from "./components/timer";
 import ToDoList from "./components/toDoList";
 
 import "./App.css";
+import MaxCount from "./components/maxCount";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <TitleShow />
       <Timer />
       <ToDoList />
+      <MaxCount />
     </>
   );
 }

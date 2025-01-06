@@ -15,10 +15,12 @@ function Timer() {
       );
     }
   };
+
   const stopTimer = () => {
     clearInterval(timerId);
     setTimerId(0);
   };
+
   const resetTimer = () => {
     clearInterval(timerId);
     setTimerId(0);

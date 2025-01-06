@@ -4,7 +4,6 @@ function ToDoList() {
   const [cityList, setCityList] = useState<string[]>([]);
   const [userInput, setUserInput] = useState("");
   //By adding the ! it tells typescript that it does indeed exists not matter what.
-  const city = document.getElementById("cityInput")!;
 
   useEffect(() => {
     () => {
